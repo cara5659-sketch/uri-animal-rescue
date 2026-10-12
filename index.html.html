@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>우리동물구조대 | 길고양이 중성화(TNR)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Gowun+Dodum&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#EEF3F4;--ink:#12303A;--muted:#4B6770;--eye:#F2B318;--sage:#6E9C8C;--card:#FFFFFF;--line:#CBD8DB;
+--disp:"Black Han Sans","Noto Sans KR","Apple SD Gothic Neo",sans-serif;--body:"Gowun Dodum","Noto Sans KR","Apple SD Gothic Neo",sans-serif;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0F1F24;--ink:#E6EEEF;--muted:#9DB5BB;--card:#17303A;--line:#2A4752;--sage:#8DB9A9}}
+:root[data-theme="dark"]{--bg:#0F1F24;--ink:#E6EEEF;--muted:#9DB5BB;--card:#17303A;--line:#2A4752;--sage:#8DB9A9}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*,*::before,*::after{box-sizing:inherit}
+body{margin:0;background:var(--bg);color:var(--ink);font:18px/1.75 var(--body)}
+.wrap{max-width:960px;margin:0 auto;padding:0 24px}
+h1,h2,h3{font-family:var(--disp);font-weight:400;line-height:1.25;margin:0}
+p{margin:0 0 1em;max-width:34em}
+
+.hero{display:grid;grid-template-columns:1.2fr 1fr;gap:40px;align-items:center;padding:72px 0 64px}
+.hero h1{font-size:clamp(40px,7vw,68px);letter-spacing:-.01em;margin-bottom:20px}
+.hero p{color:var(--muted);font-size:20px}
+.btn{display:inline-block;background:var(--eye);color:#12303A;text-decoration:none;padding:14px 26px;border-radius:999px;font-family:var(--disp);font-size:18px;margin-top:8px}
+.btn:focus-visible,a:focus-visible{outline:3px solid var(--ink);outline-offset:3px}
+.eye{width:100%;max-width:340px;justify-self:center}
+.eye .pupil{transform-origin:170px 170px;animation:slit 2.4s .4s ease-out both}
+@keyframes slit{from{transform:scaleX(2.6)}to{transform:scaleX(1)}}
+@media (prefers-reduced-motion:reduce){.eye .pupil{animation:none}}
+
+section{padding:56px 0;border-top:1px solid var(--line)}
+section h2{font-size:clamp(28px,4.5vw,38px);margin-bottom:20px}
+
+.steps{list-style:none;margin:32px 0 0;padding:0;display:grid;grid-template-columns:repeat(4,1fr);gap:16px;counter-reset:s}
+.steps li{counter-increment:s;background:var(--card);border-radius:14px;padding:22px 18px;border-top:6px solid var(--sage)}
+.steps li:last-child{border-top-color:var(--eye)}
+.steps li::before{content:counter(s);font-family:var(--disp);font-size:30px;color:var(--sage);display:block;line-height:1;margin-bottom:10px}
+.steps h3{font-size:20px;margin-bottom:8px}
+.steps p{font-size:16px;color:var(--muted);margin:0}
+
+.why{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;margin-top:28px}
+.why h3{font-size:21px;margin-bottom:8px}
+.why p{font-size:16px;color:var(--muted);margin:0}
+
+.contact{background:var(--ink);color:var(--bg);border-radius:20px;padding:40px 32px;margin:24px 0 0}
+.contact h2{margin-bottom:12px}
+.contact p{color:inherit;opacity:.85}
+.contact dl{display:grid;grid-template-columns:auto 1fr;gap:8px 20px;margin:20px 0 0}
+.contact dt{opacity:.7}
+.contact dd{margin:0}
+.contact a{color:var(--eye)}
+footer{padding:32px 0 48px;color:var(--muted);font-size:15px}
+
+@media (max-width:760px){
+.hero{grid-template-columns:1fr;padding:48px 0 40px}
+.eye{max-width:220px;order:-1;justify-self:start}
+.steps{grid-template-columns:1fr 1fr}
+.why{grid-template-columns:1fr}
+}
+@media (max-width:420px){.steps{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<main class="wrap">
+
+<header class="hero">
+  <div>
+    <h1>길고양이와 사람이<br>함께 사는 동네를 만듭니다</h1>
+    <p>우리동물구조대는 길고양이를 안전하게 포획해 동물병원에서 중성화 수술을 받을 수 있도록 연결합니다.</p>
+    <a class="btn" href="#contact">포획·중성화 문의하기</a>
+  </div>
+  <svg class="eye" viewBox="0 0 340 340" role="img" aria-label="고양이 눈 일러스트">
+    <circle cx="170" cy="170" r="160" fill="#F2B318"/>
+    <circle cx="170" cy="170" r="160" fill="none" stroke="#12303A" stroke-width="6"/>
+    <ellipse class="pupil" cx="170" cy="170" rx="34" ry="124" fill="#12303A"/>
+    <circle cx="136" cy="112" r="14" fill="#FFFFFF" opacity=".85"/>
+  </svg>
+</header>
+
+<section id="why">
+  <h2>왜 중성화인가요?</h2>
+  <p>길고양이를 없애는 것이 아니라, 새끼가 계속 늘어나는 고리를 끊는 방법입니다. 한 번의 수술이 동네의 고양이 수와 갈등을 함께 줄여줍니다.</p>
+  <div class="why">
+    <div><h3>개체 수 조절</h3><p>번식을 막아 길고양이가 더 늘어나지 않도록 합니다.</p></div>
+    <div><h3>주민 불편 완화</h3><p>발정기 울음소리와 영역 다툼이 줄어 이웃 간 갈등이 완화됩니다.</p></div>
+    <div><h3>고양이의 건강</h3><p>잦은 출산과 싸움으로 인한 부담이 줄어 더 건강하게 지낼 수 있습니다.</p></div>
+  </div>
+</section>
+
+<section id="process">
+  <h2>이렇게 진행됩니다</h2>
+  <p>포획부터 병원 인계까지 각 단계를 전담하는 구조대가 직접 챙깁니다.</p>
+  <ol class="steps">
+    <li><h3>포획 요청 접수</h3><p>요청 장소와 고양이 정보를 확인하고 일정을 잡습니다.</p></li>
+    <li><h3>안전한 포획</h3><p>고양이가 다치지 않도록 전용 틀을 사용해 포획합니다.</p></li>
+    <li><h3>동물병원 인계</h3><p>협력 동물병원에서 중성화 수술을 받습니다.</p></li>
+    <li><h3>원래 자리로 복귀</h3><p>회복 후 살던 곳으로 돌려보냅니다.</p></li>
+  </ol>
+</section>
+
+<section id="contact">
+  <div class="contact">
+    <h2>포획·중성화 문의</h2>
+    <p>길고양이 중성화가 필요한 곳이 있다면 편하게 연락 주세요. 장소와 대략적인 마릿수를 알려주시면 내용을 확인한 뒤 연락드리겠습니다.</p>
+    <dl>
+      <dt>전화</dt><dd><a href="tel:010-5518-2501">010-5518-2501</a></dd>
+      <dt>이메일</dt><dd><a href="mailto:cara5659@naver.com">cara5659@naver.com</a></dd>
+      <dt>활동 지역</dt><dd>경상남도 창원시</dd>
+    </dl>
+  </div>
+</section>
+
+<footer>
+  <strong>우리동물구조대</strong> · 길고양이 중성화(TNR) 활동<br>
+  &copy; 2026 우리동물구조대
+</footer>
+
+</main>
+</body>
+</html>
