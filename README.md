@@ -1,6 +1,6 @@
 # 우리동물구조대
 
-- `index.html.html` — 홍보용 홈페이지 (길고양이 중성화 TNR 안내)
+- `index.html` — 홍보용 홈페이지 (길고양이 중성화 TNR 안내)
 - `dispatch.html` — 배차·동선 관리 앱 (시제품)
 
 ## 배차·동선 앱 (`dispatch.html`)
